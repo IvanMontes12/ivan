@@ -1,0 +1,156 @@
+<style>
+  .imagen{
+    width: 400px;
+  }
+</style>
+<main class="main-content  mt-0" style="margin: 130px;">
+    <div class="page-header align-items-start min-vh-100 pt-10 pb-15 m-3 border-radius-lg ">
+    <div class="container">
+      <div class="row mt-lg-n10 mt-md-n12 mt-n10 justify-content-center">
+        <div class="col-xl-8 col-lg-6 col-md-7 mx-auto">
+          <div class="card z-index-0">
+            <div class="card-header text-center pt-6">
+              <h6 class="h1">Encuesta de energía solar</h6>
+              <img class="imagen" src="/assets/img/transicion-energetica.png" alt="">
+            </div>
+            <div class="card-body">
+            <form action="/guardar/encuesta" method="POST">
+              <div class="form-group">
+                <label for="nombre"><h6>Nombre del Encuestado:</h6></label>
+                <input type="text" id="nombre" name="nombre_del_encuestado" class="form-control rounded-0 bg-dark text-white" required>
+              </div>
+              <div class="form-group">
+                <label for="direccion"><h6>Dirección del Hogar:</h6></label>
+                <input type="text" id="direccion" name="direccion"  class="form-control rounded-0 bg-dark text-white" required>
+              </div>
+      <div class="form-group">
+        <label for="telefono"><h6>Número de Teléfono:</h6></label>
+        <input type="tel" id="telefono" name="numero_telefono"  class="form-control rounded-0 bg-dark text-white" required>
+      </div>
+      <div class="form-group">
+        <label for="email"><h6>Correo Electrónico:</h6></label>
+        <input type="email" id="email" name="email" class="form-control rounded-0 bg-dark text-white" required> 
+      </div>
+      <div class="form-group">
+        <label for="composicion_hogar"><h6>¿Cuál es la composición de su hogar?</h6></label>
+        <select id="composicion_hogar" name="composicion_hogar" class="form-control rounded-0 bg-dark text-white"  required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="soltero">Soltero</option>
+          <option value="pareja_sin_hijos">Pareja sin hijos</option>
+          <option value="pareja_con_hijos">Pareja con hijos</option>
+          <option value="familia_extensa">Familia extensa</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="edad"><h6>¿Cuál es la edad del encuestado?</h6></label>
+        <select id="edad" name="edad_encuestado" class="form-control rounded-0 bg-dark text-white" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="<18">Menos de 18</option>
+          <option value="18-25">18-25</option>
+          <option value="26-35">26-35</option>
+          <option value="36-50">36-50</option>
+          <option value="51-65">51-65</option>
+          <option value=">65">Más de 65</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nivel_educacion"><h6>¿Cuál es su nivel de educación?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="nivel_educacion" name="nivel_educacion" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="primaria">Primaria</option>
+          <option value="secundaria">Secundaria</option>
+          <option value="tecnico">Técnico</option>
+          <option value="universitario">Universitario</option>
+          <option value="postgrado">Postgrado</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="instalarpaneles"><h6>¿Está interesado en instalar paneles fotovoltaicos en su vivienda?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="instalarpaneles" name="instalarpaneles" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+          <option value="no_seguro">No estoy seguro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="usa_energia_solar"><h6>¿Actualmente utiliza energía solar en su hogar?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="usa_energia_solar" name="utiliza_energia_solar" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+          <option value="no_seguro">No estoy seguro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="motivacion"><h6>¿Cuál es su principal motivación para considerar paneles fotovoltaicos?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="motivacion" name="motivo_usar_paneles" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="ahorro">Ahorro de energía</option>
+          <option value="reduccion_factura">Reducción de la factura eléctrica</option>
+          <option value="sostenibilidad">Sostenibilidad ambiental</option>
+          <option value="otro_motivo">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="frecuencia_mejoras"><h6>¿Con qué frecuencia realiza mejoras para hacer su hogar más sostenible?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="frecuencia_mejoras" name="frecuencia_mejoras_hogar" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="regularmente">Regularmente</option>
+          <option value="ocasionalmente">Ocasionalmente</option>
+          <option value="nunca">Nunca</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="presupuesto"><h6>¿Cuál es su presupuesto estimado para la instalación de paneles solares?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="presupuesto" name="presupuesto_estimado_paneles" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="<5000">Menos de $5,000</option>
+          <option value="5000-10000">$5,000 - $10,000</option>
+          <option value="10000-15000">$10,000 - $15,000</option>
+          <option value=">15000">Más de $15,000</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="financiamiento"><h6>¿Estaría interesado en opciones de financiamiento para la instalación de paneles solares?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="financiamiento" name="opciones_financiacion_paneles" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+          <option value="no_seguro_fin">No estoy seguro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="experiencia_solar"><h6>¿Ha tenido experiencia previa con paneles solares?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="experiencia_solar" name="experiencia_previa_paneles" required>
+          <option value="" disabled selected>Seleccione</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="entero_solar"><h6>¿Cómo se enteró por primera vez de los paneles solares?</h6></label>
+        <select class="form-control rounded-0 bg-dark text-white" id="entero_solar" name="como_se_enterode_los_paneles" required>
+        <option value="" disabled selected>Seleccione</option>
+        <option value="recomendacion">Recomendación de un amigo/familiar</option>
+        <option value="publicidad">Publicidad en línea</option>
+        <option value="evento">
+        <label for="evento">Evento comunitario</option>
+        <option value="otro">Otro</option>
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="comentarios" ><h5>¿Hay algo más que le gustaría compartir o preguntar sobre la instalación de paneles solares en su hogar?</h5></label>
+        <textarea class="form-control rounded-0 " id="comentarios" name="pregunta_comentario" rows="4" required></textarea>
+      </div>
+      <button class="btn btn-primary btn-sm mt-2">Enviar encuesta</button>
+    </form>
+        </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>

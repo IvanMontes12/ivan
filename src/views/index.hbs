@@ -1,0 +1,246 @@
+<style>
+  .texto { position: absolute; color: #fff; font-size: 28px; background-color:
+  #4CAF50; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0,
+  0, 0.2); } .card { background-color: #fff; border-radius: 10px; box-shadow: 0
+  4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s; } .card:hover {
+  transform: scale(1.03); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+  .imagen{
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid py-4">
+  <!-- Resto del código sigue igual -->
+</div>
+
+<div class="container-fluid py-4">
+  <div class="row">
+    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="row">
+            <div class="col-8">
+              <div class="numbers">
+                <p class="text-sm mb-0 text-uppercase font-weight-bold">Total de personas encuestadas</p>
+                <h5 class="font-weight-bolder">
+                  {{totalRespuestas}}
+                </h5>
+              </div>
+            </div>
+            <div class="col-4 text-end">
+              <div
+                class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle"
+              >
+                <i
+                  class="fa fa-users text-lg opacity-10"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4" style="width: 500px;">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="row">
+            <div class="col-8">
+              <div class="numbers">
+                <p class="text-sm mb-0 text-uppercase font-weight-bold">Instalar paneles fotovoltaicos</p>
+                <p class="mb-0">
+                  SI: {{porcentajeSiInstalarPaneles}}%
+                </p>
+                <p class="mb-0">
+                  NO: {{porcentajeNoInstalarPaneles}}%
+                </p>
+                <p class="mb-0">
+                  No estan seguros: {{porcentajeNoSeguroInstalarPaneles}}%
+                </p>
+              </div>
+            </div>
+            <div class="col-4 text-end">
+              <div
+                class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle"
+              >
+                <i class="fa fa-bolt text-lg opacity-10" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-sm-6" style="width: 400px;">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="row">
+            <div class="col-8">
+              <div class="numbers">
+                <p
+                  class="text-sm mb-0 text-uppercase font-weight-bold"
+                >Utilizan energia solar</p>
+                <p class="mb-0">
+                  Si: {{porcentajeSiUtilizaEnergiaSolar}}%
+                </p>
+                <p class="mb-0">
+                  No: {{porcentajeNoUtilizaEnergiaSolar}}%
+                </p>
+                <p class="mb-0">
+                  No estan seguros: {{porcentajeNoSeguroUtilizaEnergiaSolar}}%
+                </p>
+              </div>
+            </div>
+            <div class="col-4 text-end">
+              <div
+                class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle"
+              >
+                <i class="fa fa-leaf text-lg opacity-10" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-lg-7 mb-lg-0 mb-4">
+      <div class="card z-index-2 h-100">
+        <div class="card-header pb-0 pt-3 bg-transparent">
+
+          <header>
+            <h3>Bienvenido a "familias energéticas". </h3>
+            <p>Tu fuente confiable de información sobre energía solar y
+              eficiencia energética. Nos dedicamos a proporcionar recursos
+              educativos para que las familias puedan tomar decisiones
+              informadas sobre la adopción de energía renovable en sus hogares.</p>
+          </header>
+
+          <section>
+            <h2>Energía Solar: </h2>
+            <p>Descubre el mundo de la energía solar. Aquí encontrarás
+              información detallada sobre cómo los paneles solares y como estos
+              convierten la luz del sol en electricidad, los beneficios
+              medioambientales de utilizar energía solar y cómo puedes
+              aprovechar al máximo esta fuente de energía renovable.</p>
+          </section>
+
+          <section>
+            <h2>Componentes: </h2>
+            <p>Explora los elementos clave de los sistemas de energía solar,
+              desde los paneles solares que capturan la energía hasta los
+              inversores que la convierten en electricidad utilizable, y las
+              baterías que almacenan la energía para su uso continuo. Obtén
+              información técnica y conoce las características que hacen que
+              estos componentes sean eficientes y sostenibles.</p>
+          </section>
+
+          <section>
+            <h2>Eficiencia Energética: </h2>
+            <p>Descubre consejos prácticos y guías para mejorar la eficiencia
+              energética en tu hogar. Desde pequeños cambios en el estilo de
+              vida hasta actualizaciones en la infraestructura del hogar, te
+              proporcionamos las herramientas para reducir tu huella de carbono
+              y ahorrar en costos de energía.</p>
+          </section>
+
+          <section>
+            <h2>Preguntas Frecuentes: </h2>
+            <p>Respuestas a las preguntas más comunes sobre energía solar y sus
+              componentes. ¿Cuánto cuestan los paneles solares? ¿Cómo se
+              mantienen? ¿Qué beneficios puedo esperar? Encuentra respuestas
+              claras y concisas para tomar decisiones informadas sobre la
+              energía solar.</p>
+          </section>
+
+          <section>
+            <h2>Encuesta: </h2>
+            <p>¿Tienes preguntas o comentarios? ¡Nos encantaría saber de ti!
+              Utiliza nuestro formulario de contacto para ponerte en contacto
+              directo con nosotros. Estamos aquí para ayudarte en tu viaje hacia
+              un hogar más sostenible.
+              <a href="/encuesta">Ir a la encuesta</a></p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="card card-carousel overflow-hidden h-100 p-0">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide h-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner border-radius-lg h-100">
+            <div
+              class="carousel-item h-100 active"
+              style="background-image: url('./assets/img/telematica 1.jpg');
+      background-size: cover;"
+            >
+              <div
+                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5"
+              >
+                <div
+                  class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3"
+                >
+                  <i class="ni ni-camera-compact text-dark opacity-10"></i>
+                </div>
+
+              </div>
+            </div>
+            <div
+              class="carousel-item h-100"
+              style="background-image: url('./assets/img/telematica 2.jpg');
+      background-size: cover;"
+            >
+              <div
+                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5"
+              >
+                <div
+                  class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3"
+                >
+                  <i class="ni ni-bulb-61 text-dark opacity-10"></i>
+                </div>
+
+              </div>
+            </div>
+            <div
+              class="carousel-item h-100"
+              style="background-image: url('./assets/img/telematica 3.jpg');
+      background-size: cover;"
+            >
+              <div
+                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5"
+              >
+                <div
+                  class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3"
+                >
+                  <i class="ni ni-bulb-61 text-dark opacity-10"></i>
+                </div>
+
+              </div>
+            </div>
+            <div
+              class="carousel-item h-100"
+              style="background-image: url('./assets/img/telematica 4.jpg');
+      background-size: cover;"
+            >
+              <div
+                class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5"
+              >
+                <div
+                  class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3"
+                >
+                  <i class="ni ni-bulb-61 text-dark opacity-10"></i>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
